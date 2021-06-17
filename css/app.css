@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&family=Righteous&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* --- */
+
+html {
+  font-size: 4rem;
+}
+
+body {
+  text-align: center;
+}
+
+/* Contenedor */
+#container {
+  height: 100vh;
+
+  padding: 10px;
+
+  background-color: black;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(63, 62, 62, 0.856),
+    rgba(56, 56, 56, 0.897) 1px,
+    transparent 0,
+    transparent 10px
+  );
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título: Las Vegas */
+#container > p:first-of-type {
+  color: #ff1177;
+  font-family: "Monoton";
+  margin: auto;
+}
+
+#container > p:first-of-type:hover {
+  color: rgba(255, 255, 255, 0.877);
+  text-shadow: 2px 20px 30px rgba(255, 17, 119, 1),
+    -2px -20px 30px rgba(255, 17, 119, 1);
+  transition: all 1s;
+  animation-iteration-count: infinite;
+}
+
+/* Título: Dublin */
+#container > p:nth-of-type(2) {
+  color: #e7ff11;
+  font-family: "Righteous";
+  margin: auto;
+}
+
+#container > p:nth-of-type(2):hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 2px 20px 30px rgba(211, 255, 17, 1),
+    -2px -20px 30px rgba(211, 255, 17, 1);
+  transition: all 1s;
+}
+
+/* Título: New York */
+#container > p:last-of-type {
+  color: #228dff;
+  font-family: "Audiowide";
+  margin: auto;
+}
+
+#container > p:last-of-type:hover {
+  color: rgba(255, 255, 255, 0.877);
+  transition: all 1s;
+  text-shadow: 2px 20px 30px rgba(34, 141, 255, 1),
+    -2px -20px 30px rgba(34, 141, 255, 1);
+}
